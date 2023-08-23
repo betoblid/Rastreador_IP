@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>IP Address Tracker</title>
+  <meta name="description" content="aqui com o IP você consegui localizar o local e a região onde está cendo usado esse IP">
+  <meta name="robots" content="index follow">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="herbert souza">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+</head>
+<body>
+
+  
+  <main>
+    <div class="container_ip">
+      <div class="card_logo">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="card_input">
+        <p>
+          <input type="text" maxlength="16" placeholder="Search for any IP address or domain" id="text_ip">
+          <button id="btn_check"><img src="images/icon-arrow.svg" alt="proceguir com o rastreio"></button>
+        </p>
+      </div>
+      <div class="card_resu">
+        <div>
+          <h2>IP Address</h2>
+          <p><strong><span id="ip">192.212.174.101</span></strong></p>
+        </div>
+        <div>
+          <h2>Location</h2>
+          <p><strong><span id="Location">Brooklyn,NY 10001</span></strong></p>
+        </div>
+        <div>
+          <h2>Timezone</h2>
+          <p><strong><span id="Timezone">UTC</span></strong></p> <!-- add offset value dynamically using the API -->
+        </div>
+        <div>
+          <h2>ISP</h2>
+          <p><strong><span id="isp">SpaceX Starlink</span></strong></p>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    
+  </main>
+  <noscript>
+    <h1>404</h1>
+    <p>por favor ativar o javascript site precisa de javascript para seu funcionamento</p>
+  </noscript>
+  <script src="script/function.js"></script>
+</body>
+</html>

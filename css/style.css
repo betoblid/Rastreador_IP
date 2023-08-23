@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/*font-family: 'Rubik', sans-serif;*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+
+}
+
+.container_ip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-flow: column wrap;
+
+    /*colocando imagem de fundo*/
+    background-image: url("../images/pattern-bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.card_logo {
+    padding-block: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+
+}
+
+.card_input p button {
+    background: var(--Very-Dark-Gray);
+    padding: 12px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card_input p input {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card_resu {
+
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding-block: 20px;
+    border-radius: 10px;
+
+}
+
+.card_resu div h2 {
+    font: 600 12px 'Rubik', sans-serif;
+    color: var(--Dark-Gray);
+    text-transform: uppercase;
+}
+
+.card_resu div p {
+    font: 600 18px 'Rubik', sans-serif;
+}
+
+#map {
+    min-height: 500px;
+    max-height: 1000px;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+@media(max-width: 800px){
+    .card_resu{
+        flex-flow: column wrap;
+        text-align: center;
+        
+    }
+    .card_resu h2{
+        margin-top: 10px;
+    }   
+}
+
